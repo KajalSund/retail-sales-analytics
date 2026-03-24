@@ -1,0 +1,31 @@
+transaction_id,date,store_id,store_name,store_region,product_id,product_name,category,quantity,unit_price,discount_pct,customer_id
+TXN-0001,2024-01-02,S01,Downtown Toronto,Ontario,P101,Running Shoes,Footwear,2,129.99,0.10,C4421
+TXN-0002,2024-01-02,S02,West Edmonton Mall,Alberta,P205,Yoga Mat,Sports,1,49.99,0.00,C1832
+TXN-0003,2024-01-02,S01,Downtown Toronto,Ontario,P310,Winter Jacket,Apparel,1,249.99,0.15,C9901
+TXN-0004,2024-01-03,S03,Pacific Centre,BC,P101,Running Shoes,Footwear,3,129.99,0.05,C3345
+TXN-0005,2024-01-03,S02,West Edmonton Mall,Alberta,P412,Protein Powder,Nutrition,2,59.99,0.00,C7712
+TXN-0006,2024-01-03,S04,Rideau Centre,Ontario,P205,Yoga Mat,Sports,4,49.99,0.10,C2290
+TXN-0007,2024-01-04,S01,Downtown Toronto,Ontario,P520,Bluetooth Headset,Electronics,1,89.99,0.00,C5581
+TXN-0008,2024-01-04,S03,Pacific Centre,BC,P310,Winter Jacket,Apparel,2,249.99,0.20,C6672
+TXN-0009,2024-01-04,S04,Rideau Centre,Ontario,P101,Running Shoes,Footwear,1,129.99,0.00,C8834
+TXN-0010,2024-01-05,S02,West Edmonton Mall,Alberta,P520,Bluetooth Headset,Electronics,3,89.99,0.05,C1193
+TXN-0011,2024-01-05,S01,Downtown Toronto,Ontario,P412,Protein Powder,Nutrition,5,59.99,0.10,C4421
+TXN-0012,2024-01-05,S03,Pacific Centre,BC,P601,Camping Tent,Outdoors,1,399.99,0.00,C9920
+TXN-0013,2024-01-06,S04,Rideau Centre,Ontario,P205,Yoga Mat,Sports,2,49.99,0.00,C3345
+TXN-0014,2024-01-06,S01,Downtown Toronto,Ontario,P601,Camping Tent,Outdoors,1,399.99,0.10,C7712
+TXN-0015,2024-01-06,S02,West Edmonton Mall,Alberta,P101,Running Shoes,Footwear,4,129.99,0.05,C2290
+TXN-0016,2024-01-07,S03,Pacific Centre,BC,P412,Protein Powder,Nutrition,3,59.99,0.00,C5581
+TXN-0017,2024-01-07,S04,Rideau Centre,Ontario,P520,Bluetooth Headset,Electronics,2,89.99,0.10,C6672
+TXN-0018,2024-01-07,S01,Downtown Toronto,Ontario,P310,Winter Jacket,Apparel,1,249.99,0.00,C8834
+TXN-0019,2024-01-08,S02,West Edmonton Mall,Alberta,P601,Camping Tent,Outdoors,2,399.99,0.15,C1193
+TXN-0020,2024-01-08,S03,Pacific Centre,BC,P205,Yoga Mat,Sports,6,49.99,0.05,C4421
+TXN-0021,2024-01-09,S01,Downtown Toronto,Ontario,P101,Running Shoes,Footwear,3,129.99,0.10,C3345
+TXN-0022,2024-01-09,S04,Rideau Centre,Ontario,P412,Protein Powder,Nutrition,2,59.99,0.00,C7712
+TXN-0023,2024-01-09,S02,West Edmonton Mall,Alberta,P310,Winter Jacket,Apparel,1,249.99,0.05,C9901
+TXN-0024,2024-01-10,S03,Pacific Centre,BC,P520,Bluetooth Headset,Electronics,4,89.99,0.00,C2290
+TXN-0025,2024-01-10,S01,Downtown Toronto,Ontario,P601,Camping Tent,Outdoors,1,399.99,0.20,C5581
+TXN-0026,2024-01-11,S04,Rideau Centre,Ontario,P101,Running Shoes,Footwear,2,129.99,0.00,C6672
+TXN-0027,2024-01-11,S02,West Edmonton Mall,Alberta,P205,Yoga Mat,Sports,3,49.99,0.10,C8834
+TXN-0028,2024-01-12,S03,Pacific Centre,BC,P412,Protein Powder,Nutrition,5,59.99,0.05,C1193
+TXN-0029,2024-01-12,S01,Downtown Toronto,Ontario,P520,Bluetooth Headset,Electronics,2,89.99,0.00,C4421
+TXN-0030,2024-01-13,S04,Rideau Centre,Ontario,P310,Winter Jacket,Apparel,3,249.99,0.15,C3345

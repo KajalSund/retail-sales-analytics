@@ -1,0 +1,57 @@
+# =============================================================================
+# docker-compose.yml — Local development stack
+# =============================================================================
+# Brings up:
+#   • PostgreSQL 16 (analytics database)
+#   • FastAPI backend (retail-api)
+#
+# Usage:
+#   docker compose up --build          # first run
+#   docker compose up -d               # background
+#   docker compose down -v             # stop + delete volumes
+# =============================================================================
+
+version: "3.9"
+
+services:
+
+  # ── PostgreSQL ──────────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: retail_postgres
+    environment:
+      POSTGRES_USER:     retail_user
+      POSTGRES_PASSWORD: retail_pass
+      POSTGRES_DB:       retail_analytics
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U retail_user -d retail_analytics"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── FastAPI Backend ─────────────────────────────────────────────────────────
+  retail-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: retail_api
+    environment:
+      POSTGRES_USER:     retail_user
+      POSTGRES_PASSWORD: retail_pass
+      POSTGRES_HOST:     postgres          # service name = hostname in Docker network
+      POSTGRES_PORT:     5432
+      POSTGRES_DB:       retail_analytics
+      DEBUG:             "false"
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
